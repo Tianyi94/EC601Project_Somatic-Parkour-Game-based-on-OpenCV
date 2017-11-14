@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-face_cascade = cv2.CascadeClassifier('/home/tianyiz/user/601project/c/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('D:\学习\EC601\SomaticParkour\ControlPart/haarcascade_frontalface_alt.xml')
 #face_cascade = cv2.CascadeClassifier('/home/tianyiz/user/601project/c/haarcascade_upperbody.xml')
 
 cap = cv2.VideoCapture(0)

@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-face_cascade = cv2.CascadeClassifier('/home/tianyiz/user/601project/c/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('D:\学习\EC601\SomaticParkour\ControlPart\haarcascade_frontalface_alt.xml')
 #ATTENTION!!you need to change the address of the xml file as where you put it
 cap = cv2.VideoCapture(0)
 

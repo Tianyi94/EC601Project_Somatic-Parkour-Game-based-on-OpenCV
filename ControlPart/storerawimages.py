@@ -1,3 +1,7 @@
+import urllib
+import os
+import cv2
+
 def store_raw_images():
     neg_images_link = '//image-net.org/api/text/imagenet.synset.geturls?wnid=n07942152'   
     neg_image_urls = urllib.request.urlopen(neg_images_link).read().decode()
@@ -17,4 +21,4 @@ def store_raw_images():
             pic_num += 1
             
         except Exception as e:
-            print(str(e)
+            print(str(e))

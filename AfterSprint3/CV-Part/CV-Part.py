@@ -10,14 +10,11 @@ import time
 #Change the following line
 face_cascade = cv2.CascadeClassifier('C:\Users\jinyu\Desktop\CV-Part\haarcascade_frontalface_alt.xml')
 
-
+#Use socket to communicate with Unity3D
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5065
-
 print "UDP target IP:", UDP_IP
 print "UDP target port:", UDP_PORT
-#print "message:", MESSAGE
-
 sock = socket.socket(socket.AF_INET, # Internet
                      socket.SOCK_DGRAM) # UDP
 
@@ -36,9 +33,11 @@ class App(object):
 
 
     def facedetection(self):
+    #Face detection by using Haar cascade.  
         if self.tracking_state == 0:
             flag = 1;
             while flag < 10:
+            #Find face in first ten frames
                 ret, img = self.cam.read()
                 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -48,26 +47,8 @@ class App(object):
                 flag= flag +1
             self.tracking_state = 1
 
-    # def onmouse(self, event, x, y, flags, param):
-    #     x, y = np.int16([x, y]) # BUG
-    #     if event == cv2.EVENT_LBUTTONDOWN:
-    #         self.drag_start = (x, y)
-    #         self.tracking_state = 0
-    #     if self.drag_start:
-    #         if flags & cv2.EVENT_FLAG_LBUTTON:
-    #             h, w = self.frame.shape[:2]
-    #             xo, yo = self.drag_start
-    #             x0, y0 = np.maximum(0, np.minimum([xo, yo], [x, y]))
-    #             x1, y1 = np.minimum([w, h], np.maximum([xo, yo], [x, y]))
-    #             self.selection = None
-    #             if x1-x0 > 0 and y1-y0 > 0:
-    #                 self.selection = (x0, y0, x1, y1)
-    #         else:
-    #             self.drag_start = None
-    #             if self.selection is not None:
-    #                 self.tracking_state = 1
-
     def show_hist(self):
+    #Show the hist
         bin_count = self.hist.shape[0]
         bin_w = 24
         img = np.zeros((256, bin_count*bin_w, 3), np.uint8)
@@ -104,6 +85,7 @@ class App(object):
                 vis[mask == 0] = 0
 
             if self.tracking_state == 1:
+            #If find the face
                 self.selection = None
                 prob = cv2.calcBackProject([hsv], [0], self.hist, [0, 180], 1)
                 prob &= mask
@@ -114,7 +96,7 @@ class App(object):
                 yPos = track_box[0][1]
 
                 command = 0
-                #if (yPos < 150) and (xPos <= 440) and (xPos >= 200)
+                #Translate positon to command for the game
                 if yPos < 150:
                     command = 2
                     word = 'jump'

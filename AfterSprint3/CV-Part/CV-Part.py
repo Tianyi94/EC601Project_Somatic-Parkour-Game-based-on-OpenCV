@@ -7,7 +7,7 @@ import cv2
 
 import socket
 import time
-
+#Change the following line
 face_cascade = cv2.CascadeClassifier('C:\Users\jinyu\Desktop\CV-Part\haarcascade_frontalface_alt.xml')
 
 

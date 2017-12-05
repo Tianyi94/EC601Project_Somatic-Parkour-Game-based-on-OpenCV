@@ -1,6 +1,6 @@
 import sys
 #Change the following line
-sys.path.append('C:\Users\jinyu\Downloads\opencv\sources\samples\python')
+
 
 import numpy as np
 import cv2
@@ -8,18 +8,20 @@ import cv2
 import socket
 import time
 #Change the following line
-face_cascade = cv2.CascadeClassifier('C:\Users\jinyu\Desktop\CV-Part\haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('D:\Study\EC601\SomaticParkour\EC601Project\CV-Part\haarcascade_frontalface_alt.xml')
 
 #Use socket to communicate with Unity3D
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5065
-print "UDP target IP:", UDP_IP
-print "UDP target port:", UDP_PORT
+print("UDP target IP:", UDP_IP)
+print("UDP target port:", UDP_PORT)
 sock = socket.socket(socket.AF_INET, # Internet
                      socket.SOCK_DGRAM) # UDP
 
 
 class App(object):
+    hist = 0
+    track_window = (1, 1, 1, 1)
     def __init__(self, video_src):
         self.cam = cv2.VideoCapture(video_src)
         ret, self.frame = self.cam.read()
@@ -35,7 +37,7 @@ class App(object):
     def facedetection(self):
     #Face detection by using Haar cascade.
         if self.tracking_state == 0:
-            flag = 1;
+            flag = 1
             while flag < 10:
             #Find face in first ten frames
                 ret, img = self.cam.read()
@@ -76,7 +78,7 @@ class App(object):
                 hsv_roi = hsv[y0:y1, x0:x1]
                 mask_roi = mask[y0:y1, x0:x1]
                 hist = cv2.calcHist( [hsv_roi], [0], mask_roi, [16], [0, 180] )
-                cv2.normalize(hist, hist, 0, 255, cv2.NORM_MINMAX);
+                cv2.normalize(hist, hist, 0, 255, cv2.NORM_MINMAX)
                 self.hist = hist.reshape(-1)
                 #self.show_hist()
 
@@ -100,21 +102,21 @@ class App(object):
                 if yPos < 150:
                     command = 2
                     word = 'jump'
-                    print 'jump', str(command)
+                    print('jump', str(command))
                 elif xPos > 440:
                     command = -1
                     word = 'left'
-                    print 'left ', str(command)
+                    print('left ', str(command))
                 elif xPos < 200:
                     command = 1
                     word = 'right'
-                    print 'right ', str(command)
+                    print('right ', str(command))
                 else:
                     command = 0
                     word = 'middle'
-                    print 'middle ', str(command)
+                    print('middle ', str(command))
 
-                sock.sendto(str(command), (UDP_IP, UDP_PORT))
+                sock.sendto(bytearray(str(command), 'UTF-8'), (UDP_IP, UDP_PORT))
 
                 #word = 'haha'
                 cv2.rectangle(vis, (0, 0), (250, 100), (0, 23, 237), -1)
@@ -129,7 +131,7 @@ class App(object):
                 if self.show_backproj:
                     vis[:] = prob[...,np.newaxis]
                 try: cv2.ellipse(vis, track_box, (0, 0, 255), 2)
-                except: print track_box
+                except: print(track_box)
 
             cv2.imshow('camshift', vis)
 
@@ -145,5 +147,5 @@ if __name__ == '__main__':
     import sys
     try: video_src = sys.argv[1]
     except: video_src = 0
-    print __doc__
+    print(__doc__)
     App(video_src).run()

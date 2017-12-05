@@ -7,7 +7,9 @@ median = median_2d_time_filter()
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # capture video
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
+# make sure it is front camera instead of rear camera
+cap = cv2.VideoCapture(1)
 # data from face_cascade
 x = 0
 y = 0

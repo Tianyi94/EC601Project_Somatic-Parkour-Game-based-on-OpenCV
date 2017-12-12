@@ -1,15 +1,42 @@
 fileFormatVersion: 2
 guid: 7a64d093929a4bc45ae1993d93258ee0
 TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: JPY_6x4_0
+    21300002: JPY_6x4_1
+    21300004: JPY_6x4_2
+    21300006: JPY_6x4_3
+    21300008: JPY_6x4_4
+    21300010: JPY_6x4_5
+    21300012: JPY_6x4_6
+    21300014: JPY_6x4_7
+    21300016: JPY_6x4_8
+    21300018: JPY_6x4_9
+    21300020: JPY_6x4_10
+    21300022: JPY_6x4_11
+    21300024: JPY_6x4_12
+    21300026: JPY_6x4_13
+    21300028: JPY_6x4_14
+    21300030: JPY_6x4_15
+    21300032: JPY_6x4_16
+    21300034: JPY_6x4_17
+    21300036: JPY_6x4_18
+    21300038: JPY_6x4_19
+    21300040: JPY_6x4_20
+    21300042: JPY_6x4_21
+    21300044: JPY_6x4_22
+    21300046: JPY_6x4_23
+  externalObjects: {}
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -19,23 +46,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 1
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -43,12 +69,29 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: JPY_6x4_0
+    - serializedVersion: 2
+      name: JPY_6x4_0
       rect:
         serializedVersion: 2
         x: 48
@@ -59,7 +102,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_1
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_1
       rect:
         serializedVersion: 2
         x: 166
@@ -70,7 +116,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_2
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_2
       rect:
         serializedVersion: 2
         x: 285
@@ -81,7 +130,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_3
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_3
       rect:
         serializedVersion: 2
         x: 404
@@ -92,7 +144,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_4
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_4
       rect:
         serializedVersion: 2
         x: 524
@@ -103,7 +158,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_5
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_5
       rect:
         serializedVersion: 2
         x: 644
@@ -114,7 +172,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_6
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_6
       rect:
         serializedVersion: 2
         x: 9
@@ -125,7 +186,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_7
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_7
       rect:
         serializedVersion: 2
         x: 132
@@ -136,7 +200,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_8
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_8
       rect:
         serializedVersion: 2
         x: 255
@@ -147,7 +214,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_9
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_9
       rect:
         serializedVersion: 2
         x: 379
@@ -158,7 +228,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_10
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_10
       rect:
         serializedVersion: 2
         x: 504
@@ -169,7 +242,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_11
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_11
       rect:
         serializedVersion: 2
         x: 630
@@ -180,7 +256,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_12
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_12
       rect:
         serializedVersion: 2
         x: 0
@@ -191,7 +270,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_13
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_13
       rect:
         serializedVersion: 2
         x: 127
@@ -202,7 +284,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_14
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_14
       rect:
         serializedVersion: 2
         x: 255
@@ -213,7 +298,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_15
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_15
       rect:
         serializedVersion: 2
         x: 384
@@ -224,7 +312,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_16
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_16
       rect:
         serializedVersion: 2
         x: 513
@@ -235,7 +326,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_17
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_17
       rect:
         serializedVersion: 2
         x: 644
@@ -246,7 +340,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_18
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_18
       rect:
         serializedVersion: 2
         x: 20
@@ -257,7 +354,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_19
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_19
       rect:
         serializedVersion: 2
         x: 152
@@ -268,7 +368,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_20
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_20
       rect:
         serializedVersion: 2
         x: 285
@@ -279,7 +382,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_21
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_21
       rect:
         serializedVersion: 2
         x: 418
@@ -290,7 +396,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_22
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_22
       rect:
         serializedVersion: 2
         x: 552
@@ -301,7 +410,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: JPY_6x4_23
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JPY_6x4_23
       rect:
         serializedVersion: 2
         x: 686
@@ -312,7 +424,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

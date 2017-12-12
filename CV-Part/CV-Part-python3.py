@@ -7,8 +7,9 @@ import cv2
 
 import socket
 import time
+import subprocess
 #Change the following line
-face_cascade = cv2.CascadeClassifier('D:\Study\EC601\SomaticParkour\EC601Project\CV-Part\haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('.\haarcascade_frontalface_alt.xml')
 
 #Use socket to communicate with Unity3D
 UDP_IP = "127.0.0.1"
@@ -147,5 +148,7 @@ if __name__ == '__main__':
     import sys
     try: video_src = sys.argv[1]
     except: video_src = 0
+    subprocess.Popen([r"..\exegame\run.exe"])
     print(__doc__)
     App(video_src).run()
+

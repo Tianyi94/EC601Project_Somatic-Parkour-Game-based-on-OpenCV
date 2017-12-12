@@ -7,6 +7,8 @@ import cv2
 
 import socket
 import time
+
+import subprocess
 #Change the following line
 face_cascade = cv2.CascadeClassifier('C:\Users\jinyu\Desktop\CV-Part\haarcascade_frontalface_alt.xml')
 
@@ -146,4 +148,5 @@ if __name__ == '__main__':
     try: video_src = sys.argv[1]
     except: video_src = 0
     print __doc__
+    subprocess.Popen([r"..\exegame\run.exe"])
     App(video_src).run()

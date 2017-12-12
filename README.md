@@ -11,6 +11,8 @@ There are two parts for this game, computer vision (CV) part and game part. CV p
 # How to run
 Prerequist: Python2, OpenCV, Unity3D <br />
 To run this project, please first run the python file in the CV-part. There are two line in the python file that are needed to be changed, which are already commented. After CV-part is working, using Unity3D to run the file Game.unity. <br />
+We already create a exe version for the game part so Unity3D is not necessary.<br />
+Now we are still improving the game and trying to combine the exe file and the python file together so that only one file will be needed on Wednesday. <br />
 
 You can also find the demo video at https://www.youtube.com/watch?v=TwODcBhlOqA
 

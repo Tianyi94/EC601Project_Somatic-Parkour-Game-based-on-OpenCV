@@ -9,10 +9,9 @@ Boston University EC601 Project
 This is a somatic parkour game, aiming to help the white-collar workers stretch their body while having fun.  <br />
 There are two parts for this game, computer vision (CV) part and game part. CV part allows the computer to use its front camera to get the images of users as well as translate the movements of users to the commands for the game. The game part is a parkour game created by ourselves.
 # How to run
-Prerequist: Python2, OpenCV, Unity3D <br />
-To run this project, please first run the python file in the CV-part. There are two line in the python file that are needed to be changed, which are already commented. After CV-part is working, using Unity3D to run the file Game.unity. <br />
-We already create a exe version for the game part so Unity3D is not necessary.<br />
-Now we are still improving the game and trying to put all the things together so that the user will be able to start the game with one click on Wednesday. <br />
+Prerequist: Python2, OpenCV <br />
+To run this project, please first open the python file in the CV-part. There are three line in the python file that are needed to be changed, which are already commented. Then open the bat file in the Game-Part, change the address in the file.<br />
+After all the things are set, just run the bat file and enjoy. <br />
 
 You can also find the demo video at https://www.youtube.com/watch?v=TwODcBhlOqA
 

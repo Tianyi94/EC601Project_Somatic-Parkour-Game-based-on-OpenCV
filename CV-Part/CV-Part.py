@@ -1,6 +1,6 @@
 import sys
 #Change the following line
-sys.path.append('C:\Users\jinyu\Downloads\opencv\sources\samples\python')
+sys.path.append('D:\opencv\opencv\sources\samples\python')
 
 import numpy as np
 import cv2
@@ -10,7 +10,7 @@ import time
 
 import subprocess
 #Change the following line
-face_cascade = cv2.CascadeClassifier('C:\Users\jinyu\Desktop\CV-Part\haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('D:\opencv\haarcascade_frontalface_alt.xml')
 
 #Use socket to communicate with Unity3D
 UDP_IP = "127.0.0.1"
@@ -38,11 +38,14 @@ class App(object):
     #Face detection by using Haar cascade.
         if self.tracking_state == 0:
             flag = 1;
-            while flag < 10:
+            while flag < 3:
             #Find face in first ten frames
                 ret, img = self.cam.read()
                 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+                if len(faces)==0:
+                    print("No face is detected.")
+                    sys.exit()
                 for (x,y,w,h) in faces:
                     print(x,y,w,h)
                     self.selection = (x, y, x+w, y+h)
@@ -122,7 +125,7 @@ class App(object):
                 cv2.rectangle(vis, (0, 0), (250, 100), (0, 23, 237), -1)
                 cv2.rectangle(vis, (2, 2), (250, 100), (11, 235, 239), 3)
                 font = cv2.FONT_HERSHEY_SIMPLEX
-                cv2.putText(vis, word, (20, 60), font, 2, (200, 255, 155), 5, cv2.LINE_AA)
+                cv2.putText(vis, word, (20, 60), font, 2, (200, 255, 155), 5, cv2.CV_AA)
 
                 #If you want to see Y Position
                 #yPos = track_box[0][1]
@@ -148,5 +151,5 @@ if __name__ == '__main__':
     try: video_src = sys.argv[1]
     except: video_src = 0
     print __doc__
-    subprocess.Popen([r"..\exegame\run.exe"])
+    subprocess.Popen([r"BURunGame.exe"])
     App(video_src).run()

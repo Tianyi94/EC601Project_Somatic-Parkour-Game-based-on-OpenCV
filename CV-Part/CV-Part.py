@@ -1,5 +1,5 @@
 import sys
-#Change the following line
+################################################################Change the following line########################
 sys.path.append('D:\opencv\opencv\sources\samples\python')
 
 import numpy as np
@@ -9,7 +9,7 @@ import socket
 import time
 
 import subprocess
-#Change the following line
+################################################################Change the following line########################
 face_cascade = cv2.CascadeClassifier('D:\opencv\haarcascade_frontalface_alt.xml')
 
 #Use socket to communicate with Unity3D
@@ -151,5 +151,6 @@ if __name__ == '__main__':
     try: video_src = sys.argv[1]
     except: video_src = 0
     print __doc__
+    ################################################################Change the following line########################
     subprocess.Popen([r"BURunGame.exe"])
     App(video_src).run()
